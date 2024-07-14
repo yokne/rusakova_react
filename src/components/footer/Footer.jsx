@@ -1,4 +1,4 @@
-import * as s from "./footer.module.css";
+import s from "./footer.module.css";
 
 export const Footer = () => {
     return (

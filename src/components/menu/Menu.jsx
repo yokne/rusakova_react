@@ -1,4 +1,4 @@
-import { Counter } from "../counter/Counter";
+import { MenuItem } from "./MenuItem";
 
 // eslint-disable-next-line react/prop-types
 export const Menu = ({items = []}) => {
@@ -14,10 +14,4 @@ export const Menu = ({items = []}) => {
     );
 };
 
-// eslint-disable-next-line react/prop-types
-const MenuItem = ({name}) => {
-    return (
-       <li>{name} <Counter/> </li>
-    );
-};
 

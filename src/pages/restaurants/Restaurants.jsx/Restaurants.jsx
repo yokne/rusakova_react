@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { Menu } from "../../../components/menu/Menu";
-import { Reviews } from "../../../components/reviews/Reviews";
-import { Title } from "../../../components/title/Title";
 import { restaurants } from "../../../constants/restaurants-mock";
 import { Tabs } from "../../../components/tabs/Tabs";
+import { Restaurant } from "./Restaurant";
 
 export const Restaurants = () => {
     const [activeRestaurant, setActiveRestaurant] = useState(0);
@@ -20,9 +18,7 @@ export const Restaurants = () => {
                 }}
             />
 
-            <Title title={restaurants[activeRestaurant].name} />
-            <Menu items={restaurants[activeRestaurant].menu} />
-            <Reviews items={restaurants[activeRestaurant].reviews} />
+            <Restaurant id = {activeRestaurant}/>
         </div>
     );
 };

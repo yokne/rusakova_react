@@ -1,3 +1,5 @@
+import { ReviewsItem } from "./ReviewsItem";
+
 // eslint-disable-next-line react/prop-types
 export const Reviews = ({ items = [] }) => {
     if(items.length === 0) return null;
@@ -21,12 +23,3 @@ export const Reviews = ({ items = [] }) => {
     );
 };
 
-// eslint-disable-next-line react/prop-types
-const ReviewsItem = ({ text, user }) => {
-    return (
-        <li>
-            <p>{user}</p>
-            <p>{text}</p>
-        </li>
-    );
-};

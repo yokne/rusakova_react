@@ -10,12 +10,14 @@ export const Reviews = ({ items = [] }) => {
             <ul className="list">
                 {items.map((item) => {
                     return (
-                        <ReviewsItem
-                            key={item?.id}
-                            text={item?.text}
-                            user={item?.user}
-                            rating={item?.rating}
-                        />
+                        <li key={item?.id}>
+                            <ReviewsItem
+                                key={item?.id}
+                                text={item?.text}
+                                user={item?.user}
+                                rating={item?.rating}
+                            />
+                        </li>
                     );
                 })}
             </ul>

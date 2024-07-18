@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.form{
+    padding: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.button{
+    margin: 10px 0;
+}
+
+
